@@ -1,0 +1,45 @@
+alert("hahah");
+(function myFunction(){
+ document.querySelector("p").style.backgroundColor="red";
+ document.querySelector("h1").textContent = 'Dong Nhat Anh Tam';
+})();
+	// When you talk bout Numeric in JS pointing at parseFloat() and parseInt()
+	// Infinity is Global varaiable 
+	console.log('Numeric Trying out');
+(function() {
+	
+	var a = '123';
+	console.log(-Infinity     ); // VO CUC duong hoac VO CUC am
+	console.log(isFinite(Infinity));
+	console.log(isNaN(a)); //thong bao rang a co phai la khong dem duoc
+	console.log(parseInt('10.2abc',10)); // chuyen chuoi ki tu so thanh so nguyen
+	console.log(parseInt('10.2abc'));
+	console.log(+ '10.2abc');
+	console.log(0.1 + 0.2); // thuc hien mot phep toan
+	console.log(Math.sin(3.5));
+})();
+	// Boolean
+	console.log('Boolean Trying out');
+(function() {
+	console.log(Boolean(''));
+	console.log(Boolean(123));
+})();
+	console.log('Learning bout Varaiable');
+	console.log('khai bao bien theo kieu dung LET thi bien trong do la bien cuc bo');
+(function() {
+	placeinit = [];
+	for (let myLetVaraiable = 0;myLetVaraiable<5;myLetVaraiable++){
+		place = [];
+		place.push(myLetVaraiable);
+		placeinit.push(myLetVaraiable)
+	}
+	document.querySelector("h1").textContent = placeinit;
+})();
+	console.log('const in Varaiable');
+(function() {
+	const Pi = 100;
+	console.log('bien co bang 100');
+	console.log(Boolean(Pi == 100));
+	console.log('thay doi bien duoc ko');
+	console.log(Boolean(Pi == 3.14));
+})();
