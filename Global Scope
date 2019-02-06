@@ -1,0 +1,5 @@
+var x=1;
+// can use Global variables any where in JS programming
+function() {
+// can use here too
+}
